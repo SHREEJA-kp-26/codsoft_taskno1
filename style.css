@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container h1{
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 100px;
+    margin-right: 6%;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(54, 4, 72);
+    border-color: black;
+    cursor: pointer;
+}
+.navbar ul li{
+    display:inline-block;
+    padding:18px;
+    text-transform:inherit;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+}
+.navbar ul li a:hover{
+    box-shadow: 0 3px 45px rgb(197, 172, 124);
+}
+.content{
+    position: absolute;
+    color: black;
+    margin-bottom: 85%;
+    top: 30%;
+    left:10%;
+    right: 60%;
+   
+}
+.content h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    margin-left: 21%;
+    margin-top: 50px;
+    justify-content: space-between;
+   
+    
+}
+.content p{ 
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin-top: 9%;
+}
+img{
+    margin-left: 70%;
+    margin-right: 50%;
+    width: 15%;
+    height: 12%;
+}
+.logo{
+    margin-top: 2%;
+    display:contents;
+    
+}
+.logo a img{
+    margin-top: 0%;
+    margin-left: 10%;
+    display: inline-block;
+    width: 50px;
+    height: 35px;
+  
+}
+.logo1{
+    margin-top: 2%;
+}
+.logo1 a img{ 
+    margin-left: 10%;
+    display: inline-block;
+    width: 50px;
+    height: 35px;
+}
+.contact{
+    margin-left: 3%;
+    width: 50%;
+    margin: 3% auto;
+
+}
+.contact a{ 
+    font-size: 3ch;
+    width: 5%;
+    height: 5%;
+    background: rgb(176, 7, 248);
+    border-radius: 3px;
+    font-style: initial;
+    color: black;
+}
+.what{
+    margin-left: 70%;
+    font-size: 15px;
+}
+.what svg{
+    height: 13%;
+    width: 15%;
+    padding: 4px;
+}
+
+.para{   
+    margin-left: 70%;
+    font-size: 18x;
+}
+.para p{
+    margin-top: auto ;
+}
+.img1{
+    margin-left: 0%;
+    margin-right: 75%;
+}
+.img1 img{
+    width: 75%;
+    height: 75%;
+}
+.proficiency{
+    font-size: 22px;
+    position:fixed;
+    max-width: 5px;
+    width: 100%;
+    margin: 15px auto;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.proficiency .img2 {
+    margin-left: 75% ;
+    margin-right: 0%;
+}
+.img2 img{
+    width: 25%;
+    height: 24%;
+}
+.proficiency .skill-box{ 
+  
+    width:90%;
+    
+}
+.skill-box.title{
+    display:flex;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 3px;
+    color: blueviolet;
+}
+.skill-box .skill-bar{
+    
+    height: 8px;
+    width: 47%;
+    padding: 2.2px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.1);
+}
+.skill-bar .skill-per{
+    position: relative;
+    display:block;
+    padding: 2px;
+    height: 8px;
+    width: 85%;
+    border-radius: 6px;
+    background: blueviolet;
+    animation: progress 0.4s ease-in-out forwards;
+}
+.skill-per.Backend{
+    width: 66%;  
+    padding: auto;
+  }
+  .skill-per.Database{
+    width: 56%;  
+  }
+  .skill-per.Programming{
+    width: 70%;  
+  }
+ .service.wrapper{
+    padding: 5% 8%;
+
+ }
+ .serive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .service.wrapper.h1{
+    color: rgb(51, 7, 90);
+    font-size: srem;
+    -webkit-text-stroke-wdith: 2px;
+    -webkit-text-stroke-color: transparent;
+    letter-spacing: 4px;
+    background-color: rgb(87, 7, 248);
+    background: linear-gradient(Bdeg,rgba(8,52,83,1)0%,rgba(41,17,45,1)100%);
+
+ }
+ .service.wrapper.h1 span{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+ }
+ @keyframes anim{
+    95%{
+        opacity: 1;
+    }
+    100%{
+         opacity: 0;
+         left: 88%;
+ }}
+ .cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 80px;
+
+ }
+ .card{
+    height: 230px;
+    width: 270px;
+    background-color: rgba(224, 236, 225, 0.721);
+    padding: 3% 8%;
+    border: 0.2px solid rgba(224, 236, 225, 0.721);
+    border-radius: 8px;
+    transition: .6s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+ }
+ .card:after{
+    content:"";
+    position: absolute;
+    top:150%;
+    left: 200px;
+    width: 120%;
+    transform: rotate(50deg);
+    background-color: azure;
+    height: 18px;
+    filter:blur(30px);
+ }
+ .card:hover{
+    background-color:rgb(234, 234, 185);
+    transform: translateY(-8px);
+ }
